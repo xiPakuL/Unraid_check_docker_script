@@ -1,5 +1,5 @@
 # Unraid_check_docker_script
-Script to troubleshoot what is filling up Unraid docker image
+Script to troubleshoot what is filling up Unraid docker image *NOW WITH FANCY COLOURS!*
 
 This script is to help troubleshoot why an Unraid docker image is getting too big.
 
