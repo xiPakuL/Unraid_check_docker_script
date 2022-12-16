@@ -3,6 +3,9 @@ Script to troubleshoot what is filling up Unraid docker image
 
 *NOW WITH FANCY COLOURS!*
 
+![image](https://user-images.githubusercontent.com/91191200/208119468-70f2b1c5-f74f-4663-b806-d3608880fe44.png)
+
+
 This script is to help troubleshoot why an Unraid docker image is getting too big.
 
 The script when run will 
