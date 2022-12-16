@@ -60,7 +60,7 @@ for volume in $volumes
 do
 name=`(docker ps -a --filter volume="$volume" --format '{{.Names}}' | sed 's/^/  /')`
 size=`(du -sh $(docker volume inspect --format '{{ .Mountpoint }}' $volume) | cut -f -1)`
-echo -e "\e[1;31m ID \e[0m"  "\e[1;33m $volume \e[0m"
+echo -e "\e[1;31m ID \e[0m"  "\e[1;95m $volume \e[0m"
 echo -e "This volume connected to \e[1;34m" $name "\e[0m has a size of \e[1;33m" $size "\e[0m"
 echo ""
 done
