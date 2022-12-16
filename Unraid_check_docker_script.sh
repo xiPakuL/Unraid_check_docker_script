@@ -6,7 +6,7 @@ remove_unconnected_volumes="no" # select "yes" or "no" to remove any unconnected
 # Do not make changes below this line #
 
 echo "##################################################################################"
-echo "\e[1;31mCleanup before starting\e[0m (if requested in script)"
+echo -e "\e[1;31mCleanup before starting\e[0m (if requested in script)"
 echo "##################################################################################"
 echo
  if [ "$remove_orphaned_images" == "yes"  ] ; then
@@ -27,9 +27,9 @@ if [ "$remove_unconnected_volumes" == "yes"  ] ; then
     echo "Not removing unconnected docker volumes (this can be set in script if you want to)"
   fi
 echo
-echo "\e[1;33m##################################################################################\e[0m"
+echo -e "\e[1;33m##################################################################################\e[0m"
 echo "List of Image, Container and docker volume size."
-echo "\e[1;33m##################################################################################\e[0m"
+echo -e "\e[1;33m##################################################################################\e[0m"
 echo
 #docker system df
 docker system df --format 'There are \t {{.TotalCount}} \t {{.Type}} \t taking up ......{{.Size}}'
