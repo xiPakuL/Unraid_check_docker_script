@@ -36,7 +36,7 @@ docker system df --format 'There are \t {{.TotalCount}} \t {{.Type}} \t taking u
 echo
 echo -e "\e[1;33m##################################################################################\e[0m"
 echo "List of containers showing size and virtual size"
-echo "##################################################################################"
+echo -e "\e[1;33m##################################################################################\e[0m"
 echo
 echo "First size is the writable layers of the container (Virtual size is writable and read only layers)"
 echo
